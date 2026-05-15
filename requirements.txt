@@ -1,0 +1,11 @@
+# Runtime + examples — for running from a clone:
+#   pip install -r requirements.txt
+#
+# If you only want the library itself, prefer:
+#   pip install xiaomi-s400-live              # core
+#   pip install "xiaomi-s400-live[cloud]"     # + Mi Cloud auto-fetch
+
+bleak>=0.22.0
+cryptography>=42.0.0
+micloud>=0.6
+python-dotenv>=1.0

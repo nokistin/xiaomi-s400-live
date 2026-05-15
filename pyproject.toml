@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xiaomi-s400-live"
+version = "0.1.0"
+description = "Real-time weight + body composition from Xiaomi Body Composition Scale S400 (MJTZC01YM)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Nitsikon" }]
+keywords = ["xiaomi", "mi-scale", "s400", "ble", "bluetooth", "body-composition"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Home Automation",
+    "Topic :: System :: Hardware",
+]
+dependencies = [
+    "bleak>=0.22.0",
+    "cryptography>=42.0.0",
+]
+
+[project.optional-dependencies]
+cloud = ["micloud>=0.6"]
+examples = ["python-dotenv>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/YOURUSER/xiaomi-s400-live"
+Source = "https://github.com/YOURUSER/xiaomi-s400-live"
+
+[tool.setuptools.packages.find]
+include = ["xiaomi_s400_live*"]
+exclude = ["examples*", "tests*"]

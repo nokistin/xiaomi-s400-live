@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Captures + secrets — never commit
+*.pklg
+*.btsnoop
+*.log
+mi_token.bin
+.s400_cache.json
+private/
+secrets.py
+.env
+credentials.json
+
+# Local research/journey files — keep on disk for reference, never commit
+debug/
