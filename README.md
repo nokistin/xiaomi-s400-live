@@ -139,6 +139,12 @@ The protocol and decoders were built on:
 
 The protocol is reverse-engineered; it can break on firmware updates. Tested against firmware `2.1.1_0006`.
 
+The Mi Home v2 protocol port, encrypted-channel decoder, and high-level Scale
+client were developed pair-programming with [Claude](https://claude.com/claude-code)
+(Opus 4.7). Pairing across PacketLogger capture analysis, AES-CCM session-key
+verification, and async Bleak integration took roughly one evening from
+"can't decrypt anything" to working realtime.
+
 ## License
 
 Apache 2.0
